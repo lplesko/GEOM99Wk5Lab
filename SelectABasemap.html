@@ -1,0 +1,11 @@
+require([
+  "esri/Map",
+  "esri/views/MapView",
+  "esri/widgets/BasemapToggle",
+  "esri/widgets/BasemapGallery"
+], function(Map, MapView, BasemapToggle, BasemapGallery) {
+  var basemapToggle = new BasemapToggle({
+    view: view,
+    nextBasemap: "satellite"
+  });
+view.ui.add(basemapToggle, "bottom-right");
