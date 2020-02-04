@@ -49,6 +49,7 @@
           }
         }
       });
+      view.ui.add(basemapGallery, "top-right"); // Add to the view
       
       // Trailheads feature layer (points)
       var trailheadsLayer = new FeatureLayer({
@@ -68,7 +69,6 @@
       });
       map.add(parksLayer, 0);
       
-      view.ui.add(basemapGallery, "top-right"); // Add to the view
     });
   
   </script>
